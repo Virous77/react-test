@@ -1,0 +1,45 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background-color: rgb(113, 113, 248);
+  color: white;
+}
+
+.main-nav h1 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links li {
+  font-size: 17px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.nav-links li:hover {
+  color: rgb(229, 226, 226);
+}
+
+.not-active-tab {
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+}
+
+.active-tab {
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 620px) {
+  .main-nav {
+    padding: 1rem;
+  }
+}

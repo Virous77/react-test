@@ -1,0 +1,14 @@
+.bookmark-row {
+  grid-template-columns: 1fr;
+}
+
+.empty {
+  padding: 3px 10px;
+  border-radius: 2px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 4rem;
+  color: white;
+  font-size: 15px;
+  background-color: blue;
+}

@@ -1,0 +1,26 @@
+.pagination {
+  text-align: center;
+  background-color: blue;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 10px 2rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.hide {
+  color: silver;
+  font-weight: 600;
+}
+
+.pagination p {
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+}

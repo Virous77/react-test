@@ -1,0 +1,72 @@
+.userBar {
+  padding: 1rem;
+}
+
+.userList-main {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.userList-row {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.userList-main li {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-data {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userList-main span {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.userList-main img {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.userList-main li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.error {
+  background-color: red;
+  padding: 4px 10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .userList-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .userList-main {
+    grid-template-columns: 1fr;
+  }
+
+  .userList-main span {
+    font-size: 16px;
+  }
+}
