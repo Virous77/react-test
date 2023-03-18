@@ -22,12 +22,14 @@ const BookmarkAction = ({ user }) => {
           onClick={() => dispatch(bookmarkedUser(user))}
           size={22}
           cursor="pointer"
+          className="starLogo"
         />
       ) : (
         <AiOutlineStar
           onClick={() => handleBookmark(user)}
           size={22}
           cursor="pointer"
+          className="starLogo"
         />
       )}
     </div>

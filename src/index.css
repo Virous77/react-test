@@ -8,7 +8,26 @@
   scroll-behavior: smooth;
 }
 
-
 li {
   list-style: none;
+}
+
+:root {
+  --main-navbar-color: hsl(240, 91%, 71%);
+  --main-navbar-font-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --font-color: hsl(0, 0%, 0%);
+  --search-background-color: hsl(0, 0%, 100%);
+}
+
+.darkTheme {
+  --main-navbar-color: hsl(240, 94%, 63%);
+  --main-navbar-font-color: hsla(0, 0%, 100%, 0.52);
+  --body-color: hsla(0, 0%, 0%, 0.536);
+  --font-color: hsl(0, 0%, 100%);
+  --search-background-color: hsla(0, 0%, 100%, 0.749);
+}
+
+body {
+  background-color: var(--body-color);
 }

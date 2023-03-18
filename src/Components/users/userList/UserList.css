@@ -31,6 +31,7 @@
 .userList-main span {
   text-transform: capitalize;
   font-size: 20px;
+  color: var(--font-color);
 }
 
 .userList-main img {

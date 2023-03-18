@@ -7,7 +7,7 @@ export const getUsers = createAsyncThunk("getUsers/users", async () => {
   try {
     const { data } = await axios.get(`${GITHUB_URL}/users`, {
       headers: {
-        Authorization: process.env.REACT_APP_TOKEN,
+        Authorization: "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",
       },
     });
     return data;

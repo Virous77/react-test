@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5rem;
-  background-color: rgb(113, 113, 248);
-  color: white;
+  background-color: var(--main-navbar-color);
+  color: var(--main-navbar-font-color);
 }
 
 .main-nav h1 {
@@ -25,7 +25,7 @@
 }
 
 .nav-links li:hover {
-  color: rgb(229, 226, 226);
+  color: var(--main-navbar-font-color);
 }
 
 .not-active-tab {
@@ -35,7 +35,7 @@
 
 .active-tab {
   padding-bottom: 0.2rem;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--main-navbar-font-color);
 }
 
 @media (max-width: 620px) {

@@ -12,3 +12,7 @@
   font-size: 15px;
   background-color: blue;
 }
+
+.starLogo {
+  color: var(--font-color);
+}

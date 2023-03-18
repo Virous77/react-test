@@ -5,7 +5,7 @@ import { bookMarkUsr } from "../../../store/slices/userSlice";
 import Users from "../../UtilsComponents/Users";
 import Search from "../../search/Search";
 
-const Bookmark = () => {
+const Bookmark = React.memo(() => {
   const bookmarkUsers = useSelector(bookMarkUsr);
   const [search, setSearch] = useState("");
 
@@ -38,6 +38,6 @@ const Bookmark = () => {
       </ul>
     </main>
   );
-};
+});
 
 export default Bookmark;

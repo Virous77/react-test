@@ -8,7 +8,7 @@ import Users from "../../UtilsComponents/Users";
 import Pagination from "../../pagination/Pagination";
 import Search from "../../search/Search";
 
-const UserList = () => {
+const UserList = React.memo(() => {
   const dispatch = useDispatch();
   const users = useSelector(useUsers);
   const isError = useSelector(error);
@@ -63,6 +63,6 @@ const UserList = () => {
       )}
     </main>
   );
-};
+});
 
 export default UserList;

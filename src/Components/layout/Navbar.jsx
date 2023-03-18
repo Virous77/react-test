@@ -1,13 +1,15 @@
 import React from "react";
 import "./Navbar.css";
 import { navLinks } from "../utils/data";
+import Theme from "../Theme";
 
-const Navbar = ({ activeTab, setActiveTab }) => {
+const Navbar = React.memo(({ activeTab, setActiveTab }) => {
   return (
     <nav className="main-nav">
       <h1 onClick={() => setActiveTab("users")}>React</h1>
 
       <ul className="nav-links">
+        <Theme />
         {navLinks.map((links) => (
           <li
             key={links.id}
@@ -22,6 +24,6 @@ const Navbar = ({ activeTab, setActiveTab }) => {
       </ul>
     </nav>
   );
-};
+});
 
 export default Navbar;
